@@ -4,7 +4,8 @@ const { nanoid } = require('nanoid');
 require('dotenv').config();
 
 const { User } = require('../../models/user');
-const { HttpError, sendEmailNodemailer } = require('../../helpers');
+const { HttpError } = require('../../helpers');
+const sendEmailNodemailer = require('../../services/email/sendEmailNodemailer');
 
 const { BASE_URL } = process.env;
 
